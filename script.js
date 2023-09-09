@@ -13,9 +13,12 @@ btn.addEventListener("click",()=>{
 		resolve(alert("Welcome, "+nameval+". You can vote."))
 	},4000)
 	}
-	else if(ageval<18){
-		alert("Oh sorry "+nameval+". You aren't old enough.")
+	else if(ageval<18 && ageval>0){
+		rejection(alert("Oh sorry "+nameval+". You aren't old enough."))
 	}
+		else{
+			alert("Please enter valid details");
+		}
 	})
 })
 
